@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutMe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Script" href="Script.js">
+    <script src="https://kit.fontawesome.com/353d68b4bd.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src = "images/my blue name logo.png" class="logo">
+                <ul id="slidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div class="aboutme">
+                    <div class="text-1">Hello, my name is</div>
+                    <div class="text-2">Hayley</div>
+                    <div class="text-1">from Hong Kong</div>
+                    <div class="text-3">And I'm a <span class="autotype"></span></div>
+                </div>
+
+                <script>
+                    var typed = new Typed(".autotype", {
+                        strings: ["Frontend Developer", "Web Developer", "Web Designer", "Graphic Designer", "Freelancer"],
+                        typeSpeed: 50,
+                        backSpeed: 50, 
+                        loop: true,
+                    });
+                </script>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <img src="https://cdn.pixabay.com/photo/2020/08/06/10/23/woman-5467535_1280.png" class="aboutmeimg">
+                </div>
+                <div class="col-md-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="introduce">Being self-motivated, I am
+                        enthusiastic about learning
+                        new knowledge and work
+                        practices by participating in a
+                        wide range of activities and
+                        career-oriented programs.
+                        When handling projects, I am
+                        detail-minded and can devise
+                        creative ideas based on my
+                        abundant technical skills in a
+                        collaborative environment.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Graphic Designer</span><br>Designing and layout for Commercial use</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building IOS/ Android appps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2022</span><br>Frontend Development learning</li>
+                                <li><span>2021-Current</span><br>Freelance Multimedia Designer</li>
+                                <li><span>2021-Current</span><br>Digital Designer</li>
+                                <li><span>2018-2020</span><br>Part-Time Shop Assistant at Gallerie du Vin Limited</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2019-2021</span><br>Bachelor of Social Sciences
+                                    (Honours) in Media and Social
+                                    Communication at Hong Kong Baptist University</li>
+                                <li><span>2016-2019</span><br>Higher Diploma Legal
+                                    Executive at HKU SPACE PO LEUNG KUK Stanley Ho
+                                    Community College</li>
+                                <li><span>2008-2015</span><br>Secondary School (HKDSE) at Valtorta College</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>HTML/ CSS/ Javascript</p>
+                    <a href=" #">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>React Native/ Redux</p>
+                    <a href=" #">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Website Design, EDM, Leaflet Design, Layout Design and Video Editing.</p>
+                    <a href=" #">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/webdevelopment.png" class="pic1">
+                    <div class="layer">
+                        <h3>Portfolio Webpage</h3>
+                        <p>This is the webpage I create for my portfolio as a resume page.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/appdevelopment.png">
+                    <div class="layer">
+                        <h3>Uber-eats App</h3>
+                        <p>This is the simulated Uber-Eats App I created for my portfolio.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/designer.png">
+                    <div class="layer">
+                        <h3>Graphic Designs</h3>
+                        <p>This is my Design portfolio including EDM, Leaflet Design and Layout Design.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>hayyleywork@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+852-66868606</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Hayleywai"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/hayley-designer/"><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="images/Hayleywai's_Resume.jpg" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" row="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var slidemenu = document.getElementById("slidemenu");
+    function openmenu() {
+        slidemenu.style.right = "0";
+    }
+    function closemenu() {
+        slidemenu.style.right = "-380px";
+    }
+</script>
+
+
+</body>
+</html>
